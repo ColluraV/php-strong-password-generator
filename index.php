@@ -57,8 +57,8 @@ include "./functions.php"
 
             <div class="col-6">
 
-                <h2>La tua Password è</h2>
-                <p> <?php echo $password ?> </p>
+                <h4>La tua Password è</h4>
+                <h2> <?php echo $password ?> </h2>
 
             </div>
 
