@@ -1,5 +1,5 @@
 <?php 
-
+include "./functions.php"
 
 ?>
 
@@ -16,6 +16,55 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <form action="functions.php">
+
+                <select name="qty" class="form-select form-select-lg mb-3 my-3" aria-label="Large select example">    
+                    <option selected value="8">Seleziona il numero di caratteri</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                </select>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="NumCheck" id="flexRadioDefault1" value=true >
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Numeri
+                    </label>
+                </div>                                
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="MaiuscCheck" id="flexRadioDefault1" value=true >
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Maiuscole
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="SimbCheck" id="flexRadioDefault1" value=true >
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Simboli
+                    </label>
+                </div>
+
+                <button class="btn btn-primary" type="submit">conferma</button>
+            </form>
+
+            <div class="col-6">
+
+                <h2>La tua Password è</h2>
+                <p> <?php echo $password ?> </p>
+
+            </div>
+
+
+        </div>
+    </div>    
+
 </body>
 </html>
