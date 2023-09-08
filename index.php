@@ -18,7 +18,7 @@ include "./functions.php"
 <body>
     <div class="container">
         <div class="row">
-            <form action="functions.php">
+            <form action="" method="GET">
 
                 <select name="qty" class="form-select form-select-lg mb-3 my-3" aria-label="Large select example">    
                     <option selected value="8">Seleziona il numero di caratteri</option>

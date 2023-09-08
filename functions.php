@@ -1,6 +1,6 @@
 <?php
 
-$minuscole="";
+
 $maiuscole="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 $simboli="!@#$%&*_";
 $numeri="0123456789";
@@ -16,12 +16,9 @@ if($NumCheck==true){
 }if($MaiuscCheck==true){
     $chars = $chars .$maiuscole;
 }if($SimbCheck==true){
-    $chars = $chars .$numeri;
+    $chars = $chars .$simboli;
 }
 
 $password = substr( str_shuffle( $chars ), 0, $_GET["qty"] );
-
-
-
 
 ?>
